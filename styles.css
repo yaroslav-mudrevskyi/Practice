@@ -13,6 +13,8 @@ button {
 ol,
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -22,6 +24,17 @@ a {
 
 address {
   font-style: normal;
+}
+
+h1,
+h2.h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 /*#endregion Base */
 
@@ -42,10 +55,22 @@ address {
 
 /* #endregion Componant */
 
+.container {
+  max-width: 1168px;
+  outline: solid red;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 /* #region Header */
 .page-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .header-nav {
+  outline: solid green;
 }
 
 .header-logo {
@@ -62,6 +87,7 @@ address {
 }
 .header-nav-list {
 }
+
 .header-list-item {
 }
 .header-nav-link {
@@ -76,16 +102,35 @@ address {
 
 /* #region Hero */
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero .container {
+  padding: 381px 40px 40px;
+  border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.4);
 }
+
 .hero-title {
+  width: 484px;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
 }
+
+.hero-btns {
+  display: flex;
+}
+
 .hero-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 14px;
 }
 .hero-item {
 }
@@ -95,6 +140,15 @@ address {
   color: #fff;
 }
 .btn-buy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 14px;
+  min-width: 144px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 100px;
   background-color: #fd9222;
 }
 
@@ -105,15 +159,32 @@ address {
 }
 
 .btn-how {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 14px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 183px;
+  margin-right: 585px;
   background-color: transparent;
 }
 
 .btn-how:hover,
 .btn-how:focus {
   color: #fd9222;
+  border: 1px solid #fd9222;
 }
 
 .hero-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 14px;
+
   color: #fff;
 }
 
@@ -128,6 +199,8 @@ address {
 
 /* #region Benefits */
 .benefits {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #1e1823;
 }
 
@@ -151,6 +224,8 @@ address {
 
 /* #region ingridients */
 .ingridients {
+  padding-top: 120px;
+  padding-bottom: 60px;
   background-color: #fff;
 }
 .ingridients-title {
@@ -191,6 +266,8 @@ address {
 
 /* #region How it`s made */
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .made-title {
   font-weight: 600;
@@ -260,6 +337,8 @@ address {
 
 /* #region Sellers */
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .sellers-title {
   font-weight: 600;
@@ -287,7 +366,10 @@ address {
 
 /* #region Reviews */
 .reviews {
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
+
 .reviews-title {
   font-weight: 600;
   font-size: 24px;
@@ -313,7 +395,7 @@ address {
 
 .reviews-text {
   font-size: 14px;
-  line-height: 1.28
+  line-height: 1.28;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
@@ -321,7 +403,7 @@ address {
 
 .reviews-btn {
   font-weight: 600;
-font-size: 18px;
+  font-size: 18px;
   background-color: transparent;
 }
 
@@ -330,6 +412,8 @@ font-size: 18px;
 /* #region Footer */
 
 .page-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #1e1823;
 }
 .footer-title {
