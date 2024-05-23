@@ -27,7 +27,8 @@ address {
 }
 
 h1,
-h2.h3,
+h2,
+h3,
 p {
   margin: 0;
 }
@@ -64,6 +65,7 @@ img {
 }
 
 /* #region Header */
+
 .page-header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -72,12 +74,11 @@ img {
 .page-header .container {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .header-nav {
   display: flex;
+  justify-content: space-between;
   outline: solid green;
 }
 
@@ -103,10 +104,9 @@ img {
 .header-nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
+  justify-content: center;
   gap: 24px;
-  margin-right: 90px;
+  /* margin-right: 90px; */
 }
 
 .header-list-item {
@@ -136,11 +136,15 @@ img {
 /* #endregion Header */
 
 /* #region Hero */
+
 .hero {
   padding-bottom: 80px;
 }
 
 .hero .container {
+}
+
+.hero-container {
   padding: 381px 40px 40px;
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.4);
@@ -151,13 +155,14 @@ img {
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.21;
+  line-height: 1.21429;
   letter-spacing: -0.03em;
   color: #fff;
 }
 
 .hero-btns {
   display: flex;
+  outline: 1px solid red;
 }
 
 .hero-list {
@@ -182,7 +187,7 @@ img {
   gap: 14px;
   min-width: 144px;
   padding: 14px 40px;
-  border: none;
+  border-color: transparent;
   border-radius: 100px;
   background-color: #fd9222;
 }
@@ -233,6 +238,7 @@ img {
 /* #endregion Hero */
 
 /* #region Benefits */
+
 .benefits {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -241,11 +247,18 @@ img {
 
 .benefits-list {
   display: flex;
-  gap: 88px;
+  align-items: flex-start;
   justify-content: center;
+  gap: 88px;
 }
+
 .benefits-items {
-  /* width: 308px; */
+  display: flex;
+  width: calc((100% - 88px * 2) / 3);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 18px;
 }
 .benefits-subtitle {
   font-weight: 600;
@@ -268,6 +281,8 @@ img {
   background-color: #fff;
 }
 .ingridients-title {
+  width: 412px;
+  margin: 0 auto;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
