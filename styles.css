@@ -101,6 +101,16 @@ img {
 .header-logo-accent {
   font-style: normal;
 }
+
+.header-logo-icon {
+  stroke: #fd9222;
+  fill: #fcf1e0;
+}
+
+.header-contact-icon:hover {
+  fill: #fd9222;
+}
+
 .header-nav-list {
   display: flex;
   align-items: center;
